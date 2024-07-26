@@ -1,67 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <link rel="stylesheet" href="css.css">
-<link rel="shortcut icon" href="assets/Vortex.png" type="image/x-icon">
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Vortex</title>
-</head>
-<body>
-   <header>
-      <img src="assets/Vortex.png" alt="" class="logo">
+  <head>
+    <link rel="stylesheet" href="css.css" />
+    <link rel="shortcut icon" href="assets/Vortex.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vortex</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/Vortex.png" alt="" class="logo" />
       <ul>
-         <li>novos</li>
-         <li>seminovos</li>
-         <li>ofertas</li>
-         <li>contato</li>
+        <li>novos</li>
+        <li>seminovos</li>
+        <li>ofertas</li>
+        <li>contato</li>
       </ul>
-   </header>
-   
-   <div class="carrosel">
+    </header>
+
+    <div class="carrosel">
       <div class="container" id="img">
-         <img src="assets/Desktop.jpg" alt="" class="CarroselImg">
-         <img src="https://assets-cdn.static-gm.com/Assets/00730d0b-2bd7-43fd-8a13-188941099e9d/8028f55b-f9be-4103-a097-88eab25ced0a/v-1720815723/Desktop.jpg" alt="" class="CarroselImg">
-         <img src="https://assets-cdn.static-gm.com/Assets/00730d0b-2bd7-43fd-8a13-188941099e9d/6373727a-50fe-457b-98bc-56c9125bc1ee/v-1720228919/Desktop.jpg" alt="" class="CarroselImg">
-         <img src="https://assets-cdn.static-gm.com/Assets/00730d0b-2bd7-43fd-8a13-188941099e9d/a9df8171-6dd4-4ec5-ad62-d7fc3277cbd5/v-1721076001/Desktop.jpg" alt="" class="CarroselImg">
-         <img src="https://assets-cdn.static-gm.com/Assets/00730d0b-2bd7-43fd-8a13-188941099e9d/2d6ab16e-cc0b-4baa-9441-c538dcd5689b/v-1720653267/Desktop.jpg" alt="" class="CarroselImg">
+        <img src="assets/Desktop.jpg" alt="" class="CarroselImg" />
+        <img
+          src="https://assets-cdn.static-gm.com/Assets/00730d0b-2bd7-43fd-8a13-188941099e9d/8028f55b-f9be-4103-a097-88eab25ced0a/v-1720815723/Desktop.jpg"
+          alt=""
+          class="CarroselImg"
+        />
+        <img
+          src="https://assets-cdn.static-gm.com/Assets/00730d0b-2bd7-43fd-8a13-188941099e9d/6373727a-50fe-457b-98bc-56c9125bc1ee/v-1720228919/Desktop.jpg"
+          alt=""
+          class="CarroselImg"
+        />
+        <img
+          src="https://assets-cdn.static-gm.com/Assets/00730d0b-2bd7-43fd-8a13-188941099e9d/a9df8171-6dd4-4ec5-ad62-d7fc3277cbd5/v-1721076001/Desktop.jpg"
+          alt=""
+          class="CarroselImg"
+        />
+        <img
+          src="https://assets-cdn.static-gm.com/Assets/00730d0b-2bd7-43fd-8a13-188941099e9d/2d6ab16e-cc0b-4baa-9441-c538dcd5689b/v-1720653267/Desktop.jpg"
+          alt=""
+          class="CarroselImg"
+        />
       </div>
-   </div>
-   
-   <section class="recommended">
+    </div>
+
+    <section class="recommended">
       <div class="RecommendedButtons">
-         <a href="#" class="linkBtn">
-            Todas as ofertas
-         </a>
-         <a href="#" class="linkBtn">
-            Estoque
-         </a>
-         <a href="#" class="linkBtn">
-            Modelos
-         </a>
-         <a href="#" class="linkBtn">
-            Seminovos
-         </a>
+        <a href="#" class="linkBtn"> Todas as ofertas </a>
+        <a href="#" class="linkBtn"> Estoque </a>
+        <a href="#" class="linkBtn"> Modelos </a>
+        <a href="#" class="linkBtn"> Seminovos </a>
       </div>
 
-      <div class="labels">
-         <input type="radio" name="filter" id="cars" checked>
-         <label for="cars">Carros</label>
-         <input type="radio" name="filter" id="suvs" >
-         <label for="suvs">Suvs</label>
-         <input type="radio" name="filter" id="picapes" >
-         <label for="picapes">Picapes</label>
-         <input type="radio" name="filter" id="sportives" >
-         <label for="sportives">Esportivos</label>
-         <input type="radio" name="filter" id="eletric" >
-         <label for="eletric">Eletricos</label>
+      <div class="labels" id="labels">
+        <input type="radio" name="filter" id="Cars" checked class="inputs"/>
+        <label for="Cars">Carros</label>
+        <input type="radio" name="filter" id="Suvs" class="inputs"/>
+        <label for="Suvs">Suvs</label>
+        <input type="radio" name="filter" id="Picapes" class="inputs"/>
+        <label for="Picapes">Picapes</label>
+        <input type="radio" name="filter" id="Sportives" class="inputs"/>
+        <label for="Sportives">Esportivos</label>
+        <input type="radio" name="filter" id="Eletric" class="inputs"/>
+        <label for="Eletric">Eletricos</label>
       </div>
 
-      <div class="RecommendedCars">
-
+      <div class="RecommendedCars active">
+        <a href="#">
+           <img
+             class="carImg"
+             src="https://assets-cdn.static-gm.com/Assets/642e8290-946c-450e-9225-537890d03fd4/db0140ca-0dd7-4b8a-8b3f-1d97c61f24d7/v-1671563474/Desktop.webp"
+             alt=""
+           />
+           <p>Cruze</p>
+        </a>
+        <a href="#">
+           <img
+             class="carImg"
+             src="https://assets-cdn.static-gm.com/Assets/642e8290-946c-450e-9225-537890d03fd4/ab8d593e-2035-4012-bad5-053ed0177113/v-1671564456/Desktop.webp"
+             alt=""
+           />
+           <p>Novo Cruze Sport6 RS </p>
+        </a>
+        <a href="#">
+           <img
+             class="carImg"
+             src="https://assets-cdn.static-gm.com/Assets/642e8290-946c-450e-9225-537890d03fd4/7b4d1024-ba8a-428e-9b3a-3735b2529832/v-1671564586/Desktop.webp"
+             alt=""
+           />
+           <p>Novo Onix</p>
+        </a>
+        <a href="#">
+           <img
+             class="carImg"
+             src="https://assets-cdn.static-gm.com/Assets/642e8290-946c-450e-9225-537890d03fd4/6f1be363-e153-4277-b9ac-256d0f58f1ab/v-1681438745/Desktop.webp"
+             alt=""
+           />
+           <p>Onix Plus</p>
+        </a>
       </div>
-
-   </section>
-<script src="assets/scripts/script.js" defer></script>
-</body>
+    </section>
+    <script src="assets/scripts/script.js" defer></script>
+  </body>
 </html>

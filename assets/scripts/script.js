@@ -14,3 +14,13 @@ function carrossel() {
 }
 
 setInterval(carrossel, 5000)
+
+
+let labels = document.getElementById('labels').addEventListener('click', (e)=>{
+   
+   let input = e.target
+   console.log(input.id)
+   
+   
+})
+
