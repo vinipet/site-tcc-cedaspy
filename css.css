@@ -126,9 +126,9 @@ input[type="radio"]:checked + label{
    border-bottom: none;
 }
 
-.RecommendedCars{
+.Recommended{
 
-   display: none;
+   display: flex;
    width: 100%;
    flex-direction: row;
    justify-content: center;
@@ -140,13 +140,40 @@ input[type="radio"]:checked + label{
    margin: 20px 50px;
 }
 
-#cars  a  {
+.cars  a  {
    text-decoration: none;
    text-align: center;
    color: rgba(0, 0, 0, 0.512);
    font-weight: bold;
 }
 
-.active{
+footer{
+   background-color: rgb(110, 110, 110);
+   width: 100%;
    display: flex;
+   flex-direction: row;
+   padding: 50px 20px;
+   color: white;
+   margin-top: 90px;
+}
+footer div{
+   display: flex;
+   flex-direction: column;
+}
+
+footer a{
+   color: white;
+   text-decoration: none;
+   margin-top: 5px;
+   margin-left: 40px;
+}
+
+footer h2{
+   padding-left: 40px;
+   font-size: 15px;
+   border-bottom: 1px solid ;
+}
+
+footer a:hover{
+   text-decoration: underline;
 }
