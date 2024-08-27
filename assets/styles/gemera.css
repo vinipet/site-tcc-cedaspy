@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+   padding:0;
+   margin:0;
+   vertical-align:baseline;
+   list-style:none;
+   border:0;
+   font-family: Montserrat;
+   box-sizing: border-box
+}
+
+body{
+   min-height: 100vh;
+   overflow-x: hidden;
+}
+
+header{
+   position: absolute;
+   top: 0;
+   display: flex;
+   z-index:2;
+   width: 100vw;
+   
+   justify-content: space-between;
+   align-items: center;
+   
+   padding-top: 15vh;
+   padding-left: 10vw;
+   padding-right: 10vw;
+}
+
+.logo{
+   color: white;
+   width: 35%;
+   height: auto;
+}
+
+header ul{
+   display: flex;
+}
+
+a{
+   text-decoration: none;
+   color: white;
+   text-transform: uppercase;
+   padding: 40px; 
+   transition: all .5s ease-in-out;
+}
+
+a:hover{
+   text-decoration: underline white;
+   transition: all .5s ease-in-out;
+}
+
+
+.lazyloaded{
+   background-image: url(../img/Koenigsegg\ Gemera\ in\ front\ of\ the\ Gripen\ Atelier.jpg);
+   
+   width: 100vw;
+   height: 105vh;
+   
+   background-size: cover;
+   background-position: center center;
+   
+   box-shadow: inset 0px -20vh 30vh ;
+   
+   position: static;
+   top: 0;
+}
+
+#GEMERA{
+   width: 40vw;
+   position: relative;
+   top: 30%;
+   left: 8%;
+}
+
+.overview{
+   display: flex;
+   justify-content: space-evenly;
+   padding: 20vh 20vw ;
+}
+
+.overview h6{
+   font-size: 25px;
+
+}
+
+.overview p {
+   margin-bottom: 30px;
+   font-size: 20px;
+}
+
+#second-lazy{
+   background-image: url(../img/20230710\ EXT\ \(8\ of\ 1\).jpeg);
+   height: 110vh;
+}
