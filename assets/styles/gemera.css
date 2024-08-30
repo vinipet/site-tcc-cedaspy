@@ -4,7 +4,6 @@
    padding:0;
    margin:0;
    vertical-align:baseline;
-   list-style:none;
    border:0;
    font-family: Montserrat;
    box-sizing: border-box
@@ -38,6 +37,8 @@ header{
 
 header ul{
    display: flex;
+   list-style:none;
+
 }
 
 a{
@@ -50,7 +51,7 @@ a{
 
 a:hover{
    text-decoration: underline white;
-   transition: all .5s ease-in-out;
+   transition: text .5s ease-in-out;
 }
 
 
@@ -79,20 +80,109 @@ a:hover{
 .overview{
    display: flex;
    justify-content: space-evenly;
-   padding: 20vh 20vw ;
+   padding: 20vh 0;
 }
 
 .overview h6{
-   font-size: 25px;
+   font-size: 18px;
 
 }
 
 .overview p {
    margin-bottom: 30px;
+   font-weight: 500;
    font-size: 20px;
 }
 
 #second-lazy{
    background-image: url(../img/20230710\ EXT\ \(8\ of\ 1\).jpeg);
    height: 110vh;
+}
+
+#equal-respect{
+   background-color: black;
+   color: white;
+}
+
+.titles{
+   display: flex;
+   margin-bottom: 50px;
+   padding-top: 100px;
+}
+
+.titles h6 {
+   font-size: 20px;
+   font-weight: 500;
+   margin: 50px 400px 50px 200px;
+}
+
+#equal-respect-forAll{
+   display: flex;
+   flex-direction: column;
+}
+
+#equal-respect-forAll h4{
+   font-size: 50px;
+}
+
+.oChato{
+   padding-left: 100px;
+}
+.leftAndRigth{
+   display: flex;
+   flex-direction: row;
+}
+
+.left{
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   padding-left: 150px;
+}
+
+ol li{
+   display: flex;
+   border-bottom: 1px white solid;
+   width: 50%;
+   padding: 30px 10px 30px 30px;
+}
+
+li::before{
+   margin-right: 30px;
+   content: counter(name +1);
+   list-style-type: decimal-leading-zero;
+   font-size: small;
+}
+
+label:has([type='radio']){
+   font-size: 20px;
+   font-weight: 500;
+}
+
+
+
+label:has([type="radio"]:checked)+ p ,label:has([type="radio"]:checked)+ p + p{
+   display: block;
+   font-size: 13px;
+   font-weight: 600;
+   padding-top: 30px;
+   padding-right: 50%;
+}
+
+input[type='radio']{
+   display: none;
+}
+
+.shadow-text{
+   display: none;
+}
+
+
+.right{
+   width: 50%;
+}
+
+.right img{
+   width: 50%;
+   height: auto;
 }
